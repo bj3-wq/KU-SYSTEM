@@ -1,0 +1,301 @@
+ 
+/* STYLES FOR THE INDEX.PHP PAGE */
+#form { 
+    font-family: Arial, sans-serif; 
+    background-image: linear-gradient(to right, rgb(128, 129, 128), rgb(187, 183, 183),rgb(187, 183, 183), rgb(128, 129, 128));
+    margin: 0;
+    padding: 0 0 100px 0;
+
+    .header-section{
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        background-color: rgb(192, 188, 188);
+        position: sticky;
+        height: 100px;
+        top: 0;
+        z-index: 100;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-bottom: 2px solid lch(25.06% 0.91 19.31 / 0.582);
+    }
+    .logo{
+        width: 80px;
+        padding: 5px 0 5px 5px;
+        /* border-right: 3px solid white; */
+        /* margin-right: 10px; */
+    }
+    .name{
+        padding: 0;
+    }
+    .university-name{
+        color: rgb(4, 160, 4);
+        min-width: 100%;
+        font-size: x-large;
+        font-weight: bolder;
+        line-height: auto;
+        align-items: center;
+        text-align: center;
+        word-spacing: 30px;
+        letter-spacing: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .found{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: medium;
+        letter-spacing: 1px;
+        color: black;
+        padding-bottom: 5px;
+    }
+    .charter{
+        text-align: center;
+        font-weight: bolder;
+        font-size: x-large;
+        letter-spacing: 1px;
+        color: rgb(4, 160, 4);
+    }
+    h3{
+        text-align: center;
+        padding-top: 20px;
+    }
+form { 
+    background-image: linear-gradient(to right,rgb(187, 183, 183) , rgb(128, 129, 128) , rgb(187, 183, 183));
+    padding: 20px; 
+    margin: 30px auto; 
+    width: 350px; 
+    border-radius: 8px; 
+    box-shadow: 0 5px 8px rgba(0,0,0,0.16);
+}
+
+h2 { 
+    text-align: center; 
+    color: rgb(0, 0, 0); 
+}
+
+label { 
+    display: block; 
+    margin-top: 15px; 
+    font-weight: bold; 
+    color: rgb(0, 0, 0);
+}
+
+input,
+select{
+    width: 100%; 
+    padding: 8px; 
+    margin-top: 5px; 
+    border: 1px solid rgb(128, 129, 128); 
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    margin-top: 20px; 
+    width: 100%; 
+    padding: 10px; 
+    font-weight: bolder;
+    background: rgb(128, 129, 128); 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px;
+    font-size: 16px; 
+    cursor: pointer;
+    word-spacing: 15px;
+    letter-spacing: 0.2em;
+}
+
+.location-status { 
+    color: #3d3b3b; 
+    font-size: 12px; 
+    margin-top: 8px;
+}
+input[type="date"], 
+     [type="time"],
+     select{
+    cursor: pointer;
+
+     }
+a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: larger;
+    padding-top: 0;
+}
+a:hover{
+    color: white;
+    transition: 0.6s ease-in;
+}
+.top{
+    width: 50px;
+    border-radius: 50%;
+    /* display: flex;
+    margin: auto; */
+}
+}
+
+
+/* STYLES FOR THE ATTENDANCE.PHP PAGE */
+#feed{
+    font-family: Arial, sans-serif; 
+    background-image: linear-gradient(to right, yellow,rgb(243, 239, 239), yellow);
+    text-align: center;
+    font-weight: bolder;
+
+    a{
+        background-color: rgb(84, 87, 84);
+        border: 2px solid, rgb(13, 14, 13);
+        border-radius: 3px;
+        cursor: pointer;
+        color: white;
+        font-weight: bolder;
+        padding: 2px 5px 2px 5px;
+        text-decoration: none;
+    }
+    a:hover{
+        background-color: white;
+        color: black;
+        border: 2px solid, black;
+        transition: 0.8s ease-in-out;
+    }
+}
+
+
+/* STYLES FOR THE HOME/INDEX.HTML PAGE */
+#home{
+    background-image: url(images/6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(8px);
+    border: none;
+    box-sizing: border-box;
+
+    .header-section{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        background-color: whitesmoke;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-bottom: 2px solid lch(25.06% 0.91 19.31 / 0.582);
+    }
+    .logo{
+        width: 180px;
+        padding: 5px 0 5px 5px;
+        /* border-right: 3px solid white; */
+        /* margin-right: 10px; */
+    }
+    .name{
+        padding: 5px 10px 10px 0;
+    }
+    .university-name{
+        color: rgb(4, 160, 4);
+        min-width: 100%;
+        font-size: xx-large;
+        font-weight: bolder;
+        line-height: auto;
+        align-items: center;
+        text-align: center;
+        word-spacing: 10px;
+        padding-top: 10px;
+    }
+    .found{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: x-large;
+        letter-spacing: 1px;
+        color: black;
+    }
+    .charter{
+        text-align: center;
+        font-weight: bolder;
+        font-size: x-large;
+        letter-spacing: 1px;
+        color: rgb(4, 160, 4);
+    }
+    .box{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: large;
+        letter-spacing: 1px;
+        color: black;
+    }
+    .body-section{
+        padding: 80px 20px 150px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .welcome{
+        font-size: x-large;
+        font-weight: 800;
+    }
+    .ku{
+        font-size: x-large;
+        font-weight: 800;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    span{
+        color: rgb(6, 146, 6);
+        background-color: rgba(255, 255, 255, 0.767);
+        border-radius: 2px;
+        padding: 1px 3px 1px 3px;
+    }
+    h2{
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.667);
+        border-radius: 2px;
+        padding: 1px 3px 1px 3px;
+        word-spacing: 5px;
+    }
+    a{
+        text-decoration: none;
+        color: blue;
+        cursor: [pointer];
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+    a:hover{
+        background-color: rgba(0, 0, 0, 0.63);
+        height: 30px;
+        border-radius: 2px;
+        color: white;
+        transition: 0.8s ease-out;
+    }
+    footer{
+        text-align: center;
+        border-top: 2px solid gray;
+        height: 2rem;
+        line-height: 2rem;
+        background-color: rgba(78, 77, 77, 0.445);
+        color: whitesmoke;
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        width: 100%;
+
+    }
+}
+
+
+
+
+

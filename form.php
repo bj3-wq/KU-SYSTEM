@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LECTURE MONITORING FORM</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body id="form" onload="getLocation();">
+        <section class="header-section">
+        <div class="logo">
+            <img src="images/logo.png" alt="KU Logo" class="logo">
+        </div>
+        <div class="name">
+            <div class="university-name">KAMPALA UNIVERSITY</div>
+            <div class="found">"ORIGINAL"</div>
+            <div class="charter">The Capital's Chartered University</div> <br>
+        </div>
+    </section> 
+    <section class="body-section">
+        <center><a href="index.html" class="home" id="section 1">DASHBOARD</a></center>
+    <h2>Students' Attendance Form</h2>
+    <form action="attendance.php" method="POST" id="attendance-form" autocomplete="off">
+        <label for="name">Student Name:</label>
+        <input type="text" name="name" required>
+
+        <label for="regno">Student Number:</label>
+        <input type="text" name="regno" required>
+
+        <label for="date">Date:</label>
+        <input type="date" name="date" required>
+
+        <label for="stime">Start Time:</label>
+        <input type="time" name="stime" required>
+
+        
+        <label for="etime">End Time:</label>
+        <input type="time" name="etime" required>
+
+        <label for="course">PROGRAMME</label>
+        <select name="course" id="course" required>
+            <option value=""> </option>
+            <option value="Administrative & Sec. Studies">Administrative & Sec. Studies</option>
+            <option value="bbAgriculture & Com. Dev’ta">Agriculture & Com. Dev’t</option>
+            <option value="Arts with Educ">Arts with Educ</option>
+            <option value="Business Administration">Business Administration</option>
+            <option value="Business Computing">Business Computing</option>
+            <option value="CISCO-CCNA">CISCO-CCNA</option>
+            <option value="Computer Scie. & Info. Tech">Computer Scie. & Info. Tech</option>
+            <option value="Credit Management">Credit Management</option>
+            <option value="Development Studies">Development Studies</option>
+            <option value="Early Childhood Dev’t">Early Childhood Dev’t</option>
+            <option value="Early Childhood Educ">Early Childhood Educ</option>
+            <option value="Economics">Economics</option>
+            <option value="English Course">English Course</option>
+            <option value="Environmental Science and Tech">Environmental Science and Tech</option>
+            <option value="Fashion Design">Fashion Design</option>
+            <option value="Film Making">Film Making</option>
+            <option value="Guidance and Counselling">Guidance and Counselling</option>
+            <option value="Higher Education Certificate">Higher Education Certificate</option>
+            <option value="Human Resource Mgt">Human Resource Mgt</option>
+            <option value="Industrial Art and Design">Industrial Art and Design</option>
+            <option value="Industrial Visual Comm. Design">Industrial Visual Comm. Design</option>
+            <option value="Integrated Scienceit">Integrated Science</option>
+            <option value="Interior and Landscape Design">Interior and Landscape Design</option>
+            <option value="Interior Design">Interior Design</option>
+            <option value="International Relations">International Relations</option>
+            <option value="Islamic Banking">Islamic Banking</option>
+            <option value="Leisure, Tourism, & Hotel Mgt">Leisure, Tourism, & Hotel Mgt</option>
+            <option value="Library, Archives & Records Mgt">Library, Archives & Records Mgt</option>
+            <option value="Mass Communication">Mass Communication</option>
+            <option value="Midwifery">Midwifery</option>
+            <option value="Nursing">Nursing</option>
+            <option value="Political Science">Political Science</option>
+            <option value="Pre-University/Bridge Course">Pre-University/Bridge Course</option>
+            <option value="Primary Educ.">Primary Educ.</option>
+            <option value="Procurement & Supply Chain Mgt">Procurement & Supply Chain Mgt</option>
+            <option value="Procurement and Log. Mgt">Procurement and Log. Mgt</option>
+            <option value="Public Administration">Public Administration</option>
+            <option value="Science Education">Science Education</option>
+            <option value="Science in Agric. With Business">Science in Agric. With Business</option>
+            <option value="Science in Agric. With Educ.">Science in Agric. With Educ.</option>
+            <option value="Science in Agriculture">Science in Agriculture</option>
+            <option value="Science in Oil and Gas Mgt">Science in Oil and Gas Mgt</option>
+            <option value="Science with Educ.">Science with Educ</option>
+            <option value="Secondary Educ. Arts">Secondary Educ. Arts</option>
+            <option value="Secondary Educ. Science">Secondary Educ. Science</option>
+            <option value="Social Work & Soc. Admin">Social Work & Soc. Admin</option>
+            <option value="Social Works and Social Sciences">Social Works and Social Sciences</option>
+            <option value="Special Needs Educ">Special Needs Educ</option>
+            <option value="Sports Science">Sports Science</option>
+        </select>
+
+        <label for="course-unit">Course Unit:</label>
+        <input type="text" name="course-unit" required>
+
+        <label for="code">Course Code:</label>
+        <input type="text" name="code" required>
+
+        <label for="lname">Lecturer's Name:</label>
+        <input type="text" name="lname" required>
+
+        <input type="hidden" name="lat" id="latitude" >
+        <input type="hidden" name="long" id="longitude">
+        
+        <input type="submit" value="Submit Attendance">
+        <!-- <div class="location-status">Detecting Location.......</div> -->
+    </form>
+    <center><a href="#section 1"><img src="images/r.jpg" alt="Go To Top" class="top"></a></center>
+
+    <!-- GEO LOCATION JS -->
+        <script>
+
+        window.onload = function() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+                        document.getElementById('latitude').value = position.coords.latitude;
+                        document.getElementById('longitude').value = position.coords.longitude;
+                    },
+                );
+            }
+        }
+
+        </script>
+ </body>
+</html>
